@@ -10,10 +10,23 @@ console.log('laikas.js');
  
 */
 
-let laikas = 13;
+let laikas = 24;
 
 if (laikas >= 6 && laikas <= 12) {
   console.log('labas rytas');
-} else if (true) {
+} else if (laikas > 12 && laikas < 19) {
   console.log('laba diena');
+} else if (laikas > 18 && laikas < 24) {
+  console.log('labas vakaras');
+} else if ((laikas >= 0 && laikas < 6) || laikas === 24) {
+  console.log('labanakt');
+}
+
+// sukuriam kintamaji,  jei jis yra neigiamas, arba daugiau uz 7 tai yra netinkamas
+let num1 = 50;
+
+if (num1 < 0 || num1 > 7) {
+  console.log('skaicius netinkamas');
+} else {
+  console.log('skaicius tinkamas');
 }
