@@ -14,6 +14,6 @@ let laikas = 13;
 
 if (laikas >= 6 && laikas <= 12) {
   console.log('labas rytas');
-} else if () {
+} else if (true) {
   console.log('laba diena');
 }
