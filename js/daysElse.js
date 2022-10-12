@@ -13,6 +13,8 @@ if (day === 1) {
   console.log('Ketvirtadienis');
 } else if (day === 5) {
   console.log('Penktadienis');
+} else if (day === 6 || day === 7) {
+  console.log('Savaitgalis');
 } else {
   console.log('ne darbo diena');
 }
