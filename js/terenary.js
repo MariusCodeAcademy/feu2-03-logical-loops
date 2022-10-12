@@ -4,7 +4,6 @@ console.log('terenary.js');
 let sentence = '';
 let name = 'Mike';
 let town = 'Kaunas';
-let isStudent = true;
 /*  
 sukurti kintamji isStudent (boolean), sukurti kintamaji Name - irasom varda. sukurti town ir irasysim miesta. 
 
@@ -14,15 +13,18 @@ James gyvena London ir studijuoja
 Mike gyvena Kaunas ir dirba
 */
 
-let dirbaArStudijuoja;
+let isStudent = false;
+let dirbaArStudijuoja = isStudent ? 'studijuoja' : 'dirba';
 
-if (isStudent === true) {
-  dirbaArStudijuoja = 'studijuoja';
-} else {
-  dirbaArStudijuoja = 'dirba';
-}
+// if (isStudent === true) {
+//   dirbaArStudijuoja = 'studijuoja';
+// } else {
+//   dirbaArStudijuoja = 'dirba';
+// }
+// isStudent === true ? (dirbaArStudijuoja = 'studijuoja') : (dirbaArStudijuoja = 'dirba');
 
-sentence = `${name} gyvena ${town} ir ${dirbaArStudijuoja}`;
+// sentence = `${name} gyvena ${town} ir ${dirbaArStudijuoja}`;
+sentence = `${name} gyvena ${town} ir ${isStudent ? 'studijuoja' : 'dirba'}`;
 
 console.log(sentence);
 
@@ -34,4 +36,11 @@ if (isStudent === true) {
 
 // terenary
 
-// isStudent === true ? /* true */ : /* false */;
+// <Salyga> ? true : false ;
+
+// terenary uzduotis
+
+// sukurti kintamanji is isLoggedIn (boolean)
+let message = 'You are currently logged in to the System';
+// message = 'You are currently not logged in to the System';
+console.log(message);
