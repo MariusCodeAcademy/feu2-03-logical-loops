@@ -38,9 +38,10 @@ if (isStudent === true) {
 
 // <Salyga> ? true : false ;
 
-// terenary uzduotis
+// ternary uzduotis
 
 // sukurti kintamanji is isLoggedIn (boolean)
-let message = 'You are currently logged in to the System';
+let isLoggedIn = true;
+let message = `You are currently${isLoggedIn ? '' : ' not'} logged in to the System`;
 // message = 'You are currently not logged in to the System';
 console.log(message);
